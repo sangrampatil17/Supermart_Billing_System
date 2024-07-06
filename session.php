@@ -1,0 +1,12 @@
+<?php
+ob_start();
+session_start();
+if($_SESSION['status']!="Active"){
+header('location:login.php');
+}
+$dbfirst_name=$_SESSION['first_name'];
+$dblast_name=$_SESSION['last_name'];
+$dbmobile_number=$_SESSION['mobile_number'];
+$dbroll=$_SESSION['roll'];
+$dbemployee_id=$_SESSION['employee_id'];
+?>
